@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        background-color: #8fd14f;
+        justify-content: space-between;
+        height: 40px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px 10px;
+        margin-right: auto;
+      }
+
+      nav li {
+        list-style: none;
+        padding: 10px 5px;
+      }
+
+      nav ul {
+        display: flex;
+      }
+
+      nav ul li:last-child {
+        display: none;
+      }
+
+      nav li:not(:last-child) {
+        border-top: 1px solid rgb(255, 102, 0, 0.3);
+        border-bottom: 1px solid rgb(255, 102, 0, 0.3);
+      }
+      nav li:not(:last-child):hover {
+        background-color: rgb(255, 189, 115, 0.5);
+      }
+      @media (max-width: 600px) {
+        nav {
+          display: block;
+          position: relative;
+          flex-direction: column;
+        }
+
+        nav a {
+          align-self: flex-start;
+          display: block;
+        }
+
+        nav ul {
+          display: block;
+          text-align: center;
+        }
+
+        nav li:not(:last-child) {
+          display: none;
+        }
+
+        nav ul li:last-child {
+          display: block;
+          position: absolute;
+          bottom: -10px;
+          right: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="">Pazarcım</a>
+      <ul>
+        <li><a href="">Anasayfa</a></li>
+        <li><a href="">Konum Seç</a></li>
+        <li><a href="">Üye Ol</a></li>
+        <li><a href="">Giriş Yap</a></li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-carrot" style="color: #da7d3e"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
